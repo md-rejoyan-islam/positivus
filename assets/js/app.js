@@ -1,4 +1,9 @@
 const accordtion_title = document.querySelectorAll(".accordion-title");
+const nav_menu = document.getElementById("nav_menu");
+const show_btn = document.getElementById("show_btn");
+const cross_btn = document.getElementById("cross_btn");
+
+const menu_btn = document.getElementById("menu_btn");
 
 accordtion_title.forEach((title) => {
   title.addEventListener("click", (e) => {
@@ -14,20 +19,22 @@ accordtion_title.forEach((title) => {
     }
   });
 
-  // mouseover bg change
-  // if (title.nextElementSibling.classList.contains("inactive")) {
-  //   title.addEventListener("mouseover", (e) => {
-  //     title.parentElement.style.backgroundColor = "#b9ff66";
-  //   });
-  //   title.addEventListener("mouseout", () => {
-  //     title.parentElement.style.backgroundColor = "#f3f3f3";
-  //   });
-  // } else {
-  //   title.parentElement.style.backgroundColor = "#b9ff66";
-  // }
   if (!title.nextElementSibling.classList.contains("inactive")) {
     title.querySelector(".accordtion_btn").innerHTML = "-";
-    // title.parentElement.style.backgroundColor = "#b9ff66";
-    // title.parentElement.classList.toggle("apply-bg-green");
   }
 });
+
+menu_btn.addEventListener("click", () => {
+  // nav_menu.style.visibility = "visible";
+
+  if (nav_menu.classList.contains("menu_toggle")) {
+    show_btn.style.display = "block";
+    cross_btn.style.display = "none";
+  } else {
+    cross_btn.style.display = "block";
+    show_btn.style.display = "none";
+  }
+  nav_menu.classList.toggle("menu_toggle");
+});
+
+hide_btn;
