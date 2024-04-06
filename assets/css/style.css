@@ -1021,6 +1021,34 @@ footer .footer-links ul {
   flex-direction: column;
 }
 
+.footer-contact .contact-info button {
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 7px;
+  background: var(--GREEN, #b9ff66);
+  border: none;
+  padding: 2px 8px;
+}
+.footer-contact .contact-info p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.footer-contact .contact-form input {
+  width: 100%;
+  border-radius: 14px;
+  padding: 18px 25px;
+  font-size: 20px;
+  border: none;
+}
+.contact-form input:focus {
+  outline: none;
+}
+.footer-contact .contact-form input[type="button"] {
+  background: var(--GREEN, #b9ff66);
+  cursor: pointer;
+}
+
 @media screen and (min-width: 530px) {
   footer .footer-links ul {
     flex-direction: row;
@@ -1048,32 +1076,4 @@ footer .footer-links ul {
     flex-direction: row;
     text-align: left;
   }
-}
-
-.footer-contact .contact-info button {
-  font-size: 20px;
-  font-weight: 500;
-  border-radius: 7px;
-  background: var(--GREEN, #b9ff66);
-  border: none;
-  padding: 2px 8px;
-}
-.footer-contact .contact-info p {
-  font-size: 18px;
-  margin: 20px 0;
-}
-
-.footer-contact .contact-form input {
-  width: 100%;
-  border-radius: 14px;
-  padding: 18px 25px;
-  font-size: 20px;
-  border: none;
-}
-.contact-form input:focus {
-  outline: none;
-}
-.footer-contact .contact-form input[type="button"] {
-  background: var(--GREEN, #b9ff66);
-  cursor: pointer;
 }
