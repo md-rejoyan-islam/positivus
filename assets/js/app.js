@@ -11,4 +11,8 @@ accordtion_title.forEach((title) => {
       title.parentElement.style.backgroundColor = "#f3f3f3";
     }
   });
+  if (!title.nextElementSibling.classList.contains("inactive")) {
+    title.querySelector(".accordtion_btn").innerHTML = "-";
+    title.parentElement.style.backgroundColor = "#b9ff66";
+  }
 });
