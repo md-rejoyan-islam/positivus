@@ -593,11 +593,16 @@ footer .footer-links ul,
 .footer-contact .contact-form input {
   width: 100%;
   border-radius: 14px;
-  padding: 20px 35px;
+  padding: 18px 25px;
   font-size: 20px;
+  border: none;
+}
+.contact-form input:focus {
+  outline: none;
 }
 .footer-contact .contact-form input[type="button"] {
   background: var(--GREEN, #b9ff66);
+  cursor: pointer;
 }
 
 .footer-copyright {
