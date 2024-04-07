@@ -2,6 +2,7 @@ const accordtion_title = document.querySelectorAll(".accordion-title");
 const nav_menu = document.getElementById("nav_menu");
 const show_btn = document.getElementById("show_btn");
 const cross_btn = document.getElementById("cross_btn");
+const header = document.getElementsByTagName("header")[0];
 
 const menu_btn = document.querySelectorAll(".menu_btn");
 
@@ -26,9 +27,6 @@ accordtion_title.forEach((title) => {
 
 menu_btn.forEach((menu) => {
   menu.addEventListener("click", () => {
-    // nav_menu.style.visibility = "visible";
-    console.log("click");
-
     if (nav_menu.classList.contains("menu_toggle")) {
       show_btn.style.display = "block";
       cross_btn.style.display = "none";
@@ -37,5 +35,21 @@ menu_btn.forEach((menu) => {
       show_btn.style.display = "none";
     }
     nav_menu.classList.toggle("menu_toggle");
+    header.classList.toggle("fixed_header");
   });
 });
+
+function functiondisable() {
+  // To get the scroll position of current webpage
+  TopScroll = window.pageYOffset || document.documentElement.scrollTop;
+  LeftScroll = window.pageXOffset || document.documentElement.scrollLeft;
+
+  // if scroll happens, set it to the previous value
+  window.onscroll = function () {
+    window.scrollTo(LeftScroll, TopScroll);
+  };
+}
+
+function functionenable() {
+  window.onscroll = function () {};
+}
