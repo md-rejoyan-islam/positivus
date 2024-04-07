@@ -130,6 +130,9 @@ header nav li button:hover {
 }
 
 @media screen and (min-width: 980px) {
+  #nav_menu .mobile-bar {
+    display: none;
+  }
   header nav ul li button {
     margin-top: 0;
   }

@@ -3,7 +3,7 @@ const nav_menu = document.getElementById("nav_menu");
 const show_btn = document.getElementById("show_btn");
 const cross_btn = document.getElementById("cross_btn");
 
-const menu_btn = document.getElementById("menu_btn");
+const menu_btn = document.querySelectorAll(".menu_btn");
 
 accordtion_title.forEach((title) => {
   title.addEventListener("click", (e) => {
@@ -24,17 +24,18 @@ accordtion_title.forEach((title) => {
   }
 });
 
-menu_btn.addEventListener("click", () => {
-  // nav_menu.style.visibility = "visible";
+menu_btn.forEach((menu) => {
+  menu.addEventListener("click", () => {
+    // nav_menu.style.visibility = "visible";
+    console.log("click");
 
-  if (nav_menu.classList.contains("menu_toggle")) {
-    show_btn.style.display = "block";
-    cross_btn.style.display = "none";
-  } else {
-    cross_btn.style.display = "block";
-    show_btn.style.display = "none";
-  }
-  nav_menu.classList.toggle("menu_toggle");
+    if (nav_menu.classList.contains("menu_toggle")) {
+      show_btn.style.display = "block";
+      cross_btn.style.display = "none";
+    } else {
+      cross_btn.style.display = "block";
+      show_btn.style.display = "none";
+    }
+    nav_menu.classList.toggle("menu_toggle");
+  });
 });
-
-hide_btn;
