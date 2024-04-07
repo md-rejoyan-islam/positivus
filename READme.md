@@ -1,4 +1,4 @@
-# POSITIVUS a digital marketing agency page
+# POSITIVUS - A Digital Marketing Agency Page
 
 ## Describtion
 
