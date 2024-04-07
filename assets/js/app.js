@@ -10,18 +10,16 @@ accordtion_title.forEach((title) => {
   title.addEventListener("click", (e) => {
     title.nextElementSibling.classList.toggle("inactive");
     if (!title.nextElementSibling.classList.contains("inactive")) {
-      title.querySelector(".accordtion_btn").innerHTML = "-";
-      // title.parentElement.style.backgroundColor = "#b9ff66";
+      title.querySelector(".accordtion_btn").innerHTML = `<span>-</span>`;
       title.parentElement.classList.toggle("apply-bg-green");
     } else {
-      title.querySelector(".accordtion_btn").innerHTML = "+";
-      // title.parentElement.style.backgroundColor = "#f3f3f3";
+      title.querySelector(".accordtion_btn").innerHTML = `<span>+</span>`;
       title.parentElement.classList.toggle("apply-bg-green");
     }
   });
 
   if (!title.nextElementSibling.classList.contains("inactive")) {
-    title.querySelector(".accordtion_btn").innerHTML = "-";
+    title.querySelector(".accordtion_btn").innerHTML = `<span>-</span>`;
   }
 });
 
