@@ -59,7 +59,7 @@ a {
   height: 100%;
   overflow: scroll;
   z-index: 1000;
-  background-color: #ffffffd5;
+  background-color: #baff6661;
 }
 
 /* header  */
@@ -87,7 +87,7 @@ header nav ul {
   border-radius: 5px;
   padding: 15px;
   background-color: #fff;
-  box-shadow: 0px 0px 120px 6px #4d7e59;
+  box-shadow: 0px 0px 12000px 6px #4d7e59;
   left: 0;
   top: 0;
   right: 0;
@@ -196,7 +196,7 @@ header nav li button:hover {
 /* about_us  */
 
 #about_us {
-  padding: 80px 0 70px;
+  padding: 40px 0 70px;
   display: grid;
 }
 
@@ -207,8 +207,7 @@ header nav li button:hover {
 }
 
 #about_us h1 {
-  font-family: "Space Grotesk";
-  font-size: 60px;
+  font-size: 43px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -238,6 +237,9 @@ header nav li button:hover {
 }
 
 @media screen and (max-width: 480px) {
+  #about_us h1 {
+    font-size: 40px;
+  }
   #about_us p,
   #about_us h1 {
     text-align: left;
@@ -255,10 +257,12 @@ header nav li button:hover {
   #about_us #consultationBtn {
     display: inline-block;
   }
+
   #about_us {
     gap: 50px;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    padding: 80px 0 70px;
   }
   #about_us:first-child {
     max-width: 100%;
@@ -266,6 +270,9 @@ header nav li button:hover {
   #about_us p,
   #about_us h1 {
     text-align: left;
+  }
+  #about_us h1 {
+    font-size: 60px;
   }
 
   #about_us figure {
@@ -330,7 +337,7 @@ header nav li button:hover {
 
 .service-head h2 {
   color: #000;
-  font-size: 40px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -343,7 +350,7 @@ header nav li button:hover {
 }
 
 .service-head p {
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
   max-width: 620px;
 }
@@ -466,9 +473,13 @@ header nav li button:hover {
   .service-head {
     flex-direction: row;
   }
+  .service-head h2 {
+    font-size: 40px;
+  }
   .service-head p {
     text-align: left;
     max-width: fit-content;
+    font-size: 18px;
   }
   .service-head br {
     display: block;
@@ -527,7 +538,7 @@ header nav li button:hover {
   grid-template-columns: repeat(1, 1fr);
   background-color: var(--GRAY);
   border-radius: 45px;
-  padding: 60px;
+  padding: 30px;
   position: relative;
   margin: 70px auto;
   align-items: center;
@@ -535,6 +546,7 @@ header nav li button:hover {
 
 #things #things_img {
   display: none;
+  padding-right: 0;
 }
 
 #things h3 {
@@ -549,17 +561,26 @@ header nav li button:hover {
   font-weight: 400;
   padding: 26px 0;
 }
+
+@media screen and (min-width: 620px) {
+  #things {
+    padding: 45px;
+  }
+}
+
 @media screen and (min-width: 836px) {
   #things {
     grid-template-columns: repeat(2, 1fr);
+    padding: 60px;
   }
   #things #things_img {
     display: block;
     direction: rtl;
-    padding-right: 30px;
+    padding-right: 50px;
   }
 
   #things_img img {
+    overflow: hidden;
     max-width: 200px;
     text-align: right;
     transform: scale(2.2);
@@ -1040,8 +1061,8 @@ textarea:focus {
 #footer {
   background-color: var(--DARK);
   color: white;
-  padding: 50px 60px;
-  border-radius: 45px 45px 0 0;
+  padding: 50px 25px;
+  border-radius: 0;
 }
 footer .footer-header {
   display: flex;
@@ -1096,6 +1117,7 @@ footer .footer-links ul {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .footer-contact .contact-info button {
@@ -1127,6 +1149,9 @@ footer .footer-links ul {
 }
 
 @media screen and (min-width: 530px) {
+  #footer {
+    padding: 50px 40px;
+  }
   footer .footer-links ul {
     flex-direction: row;
   }
@@ -1146,6 +1171,10 @@ footer .footer-links ul {
 }
 
 @media screen and (min-width: 945px) {
+  #footer {
+    border-radius: 45px 45px 0 0;
+    padding: 50px 60px;
+  }
   footer .footer-header {
     flex-direction: row;
   }
