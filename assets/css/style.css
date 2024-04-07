@@ -58,7 +58,8 @@ a {
   width: 100%;
   height: 100%;
   overflow: scroll;
-  z-index: 100;
+  z-index: 1000;
+  background-color: #ffffffd5;
 }
 
 /* header  */
@@ -142,6 +143,16 @@ header nav li button:hover {
 
 #cross_btn {
   display: none;
+  font-size: 19px;
+  padding: 2px;
+  width: 28px;
+  height: 28px;
+  background-color: #eee;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#cross_btn:hover {
+  background-color: #eebab4;
 }
 
 @media screen and (min-width: 980px) {
