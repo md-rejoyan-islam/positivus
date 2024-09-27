@@ -2,7 +2,7 @@
 
 ## Describtion
 
-This landing page is about a digital marketing agency page. They build their website for their business promotion and growing perpose.I have clone the website from a figma file.
+Positivus helps businesses grow online with SEO, PPC, social media marketing, and content creation, showcasing success through detailed case studies.
 
 ## Technologies
 
