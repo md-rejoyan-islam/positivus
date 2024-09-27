@@ -2,7 +2,12 @@
 
 ## Describtion
 
-Positivus helps businesses grow online with SEO, PPC, social media marketing, and content creation, showcasing success through detailed case studies.
+Your digital marketing agency project, Positivus, focuses on helping businesses grow and succeed online through a variety of services. These include:
+
+- **SEO (Search Engine Optimization)**: Enhancing website visibility on search engines.
+- **PPC (Pay-Per-Click) Advertising**: Managing paid ad campaigns to drive targeted traffic.
+- **Social Media Marketing**: Boosting brand awareness and engagement on platforms like Facebook, Instagram, and Twitter.
+- **Content Creation**: Developing high-quality content to engage audiences and support marketing strategies.
 
 ## Technologies
 
